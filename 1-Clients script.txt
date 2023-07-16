@@ -1,0 +1,25 @@
+CREATE TABLE HR.CLIENTS
+(
+  CLIENT_ID    NUMBER(4),
+  CLIENT_NAME  VARCHAR2(50 BYTE),
+  MOBILE       VARCHAR2(50 BYTE),
+  ADDRESS      VARCHAR2(100 BYTE),
+  NID          VARCHAR2(100 BYTE),
+  CONSTRAINT CLIENTS_PK
+ PRIMARY KEY
+ (CLIENT_ID)
+);
+SET DEFINE OFF;
+Insert into HR.CLIENTS
+   (client_id, client_name, mobile, address, nid)
+ Values
+   (1, 'Ahmed Omar', '0124798987', 'Cairo', NULL);
+Insert into HR.CLIENTS
+   (client_id, client_name, mobile, address, nid)
+ Values
+   (2, 'Marwa Hashem', '0106549878', 'Alex', NULL);
+Insert into HR.CLIENTS
+   (client_id, client_name, mobile, address, nid)
+ Values
+   (3, 'Tarek Shawky', '0124659798', 'Cairo', NULL);
+COMMIT;
